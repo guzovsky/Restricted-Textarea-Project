@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restricted Textarea Project</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Title section -->
+    <header class="title">
+      <h1>Write your message:</h1>
+    </header>
+
+    <!-- Main container for all textarea inputs -->
+    <main class="text-area-container">
+      
+      <!-- Repeated textarea block (3 times) -->
+      <!-- Each textarea is wrapped with a label for accessibility and paired with a live character counter -->
+      <div class="textarea-wrapper">
+        <label>
+          <textarea maxlength="100" placeholder="Start typing..." aria-label="Message 1"></textarea>
+        </label>
+        <div class="char-counter">0 / 100</div>
+      </div>
+
+      <div class="textarea-wrapper">
+        <label>
+          <textarea maxlength="100" placeholder="Start typing..." aria-label="Message 2"></textarea>
+        </label>
+        <div class="char-counter">0 / 100</div>
+      </div>
+
+      <div class="textarea-wrapper">
+        <label>
+          <textarea maxlength="100" placeholder="Start typing..." aria-label="Message 3"></textarea>
+        </label>
+        <div class="char-counter">0 / 100</div>
+      </div>
+    </main>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/* Reset default margins/padding and set box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base font size for easier rem scaling */
+  html {
+    font-size: 16px;
+  }
+  
+  /* General body styling */
+  body {
+    text-align: center;
+    padding: 3rem;
+    background-color: #4d4779;
+    color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Main container styling */
+  .container {
+    margin: 0 auto;
+    background-color: #5d5691;
+    width: 25rem;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #000;
+  }
+  
+  /* Title spacing */
+  .title {
+    margin-bottom: 2rem;
+  }
+  
+  /* Wrapper for all textareas */
+  .text-area-container {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  
+  /* Individual textarea wrapper spacing */
+  .textarea-wrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Textarea appearance */
+  textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+    resize: none; /* disable manual resizing */
+    font-family: Arial, sans-serif;
+    box-shadow: 2px 2px 3px black;
+    overflow-y: hidden; /* hide scroll when auto-resizing */
+  }
+  
+  /* Focus state styling */
+  textarea:focus {
+    border-color: #4d4779;
+    outline: none;
+  }
+  
+  /* Red border when character limit is reached */
+  textarea.limit-reached {
+    border: 1px solid red;
+  }
+  
+  /* Character counter style */
+  .char-counter {
+    text-align: right;
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 0.3rem;
+  }
+  
